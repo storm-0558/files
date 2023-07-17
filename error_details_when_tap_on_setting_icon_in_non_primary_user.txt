@@ -1,0 +1,58 @@
+Build type: github
+Build version: 1.6.4
+Build date: 2023-04-24 14:42:59
+Current date: 2023-07-17 18:38:49
+Device: Xiaomi Redmi Note 8 Pro
+OS version: Android 13 (SDK 33)
+
+Stack trace:  
+java.lang.NullPointerException: Attempt to invoke interface method 'boolean java.util.Enumeration.hasMoreElements()' on a null object reference
+	at com.emanuelef.remote_capture.activities.prefs.SettingsActivity$SettingsFragment.refreshInterfaces(SettingsActivity.java:238)
+	at com.emanuelef.remote_capture.activities.prefs.SettingsActivity$SettingsFragment.setupCapturePrefs(SettingsActivity.java:257)
+	at com.emanuelef.remote_capture.activities.prefs.SettingsActivity$SettingsFragment.onCreatePreferences(SettingsActivity.java:165)
+	at androidx.preference.PreferenceFragmentCompat.onCreate(PreferenceFragmentCompat.java:161)
+	at androidx.fragment.app.Fragment.performCreate(Fragment.java:3090)
+	at androidx.fragment.app.FragmentStateManager.create(FragmentStateManager.java:475)
+	at androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:257)
+	at androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:1899)
+	at androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:1817)
+	at androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:1760)
+	at androidx.fragment.app.FragmentManager.dispatchStateChange(FragmentManager.java:2985)
+	at androidx.fragment.app.FragmentManager.dispatchActivityCreated(FragmentManager.java:2895)
+	at androidx.fragment.app.FragmentController.dispatchActivityCreated(FragmentController.java:263)
+	at androidx.fragment.app.FragmentActivity.onStart(FragmentActivity.java:351)
+	at androidx.appcompat.app.AppCompatActivity.onStart(AppCompatActivity.java:251)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1549)
+	at android.app.Activity.performStart(Activity.java:8384)
+	at android.app.ActivityThread.handleStartActivity(ActivityThread.java:3676)
+	at android.app.servertransaction.TransactionExecutor.performLifecycleSequence(TransactionExecutor.java:224)
+	at android.app.servertransaction.TransactionExecutor.cycleToPath(TransactionExecutor.java:204)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:176)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:97)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2304)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loopOnce(Looper.java:201)
+	at android.os.Looper.loop(Looper.java:288)
+	at android.app.ActivityThread.main(ActivityThread.java:7896)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:854)
+
+DumpMode: NONE
+FullPayload: false
+TLSDecryption: false
+TLSSetupOk: false
+CAInstallSkipped: false
+BlockQuic: false
+RootCapture: false
+Socks5: false
+BlockPrivateDns: true
+CaptureInterface: @inet
+MalwareDetection: false
+Firewall: false
+PCAPNG: false
+BlockNewApps: false
+AppFilter: 
+IpMode: IPV4_ONLY
+Trailer: false
+StartAtBoot: false
